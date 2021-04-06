@@ -1,0 +1,5 @@
+package sentenciaSincronizada;
+
+public class TwoMutex {
+
+}

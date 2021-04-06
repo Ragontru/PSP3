@@ -1,0 +1,16 @@
+package sentenciaSincronizada;
+
+public class TwoMutex extends Thread {
+
+	private Object mutex1;
+	private Object mutex2;
+
+	public TwoMutex(Object lock1, Object lock2) {
+		mutex1 = lock1;
+		mutex2 = lock2;
+	}
+
+	public void incl() {
+
+	}
+}

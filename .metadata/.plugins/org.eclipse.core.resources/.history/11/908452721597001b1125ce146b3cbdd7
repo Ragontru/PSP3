@@ -1,0 +1,6 @@
+package sentenciaSincronizada;
+
+public class MutualExclusion extends Thread {
+	
+	
+}

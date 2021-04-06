@@ -1,0 +1,14 @@
+package sentenciaSincronizada;
+
+public class MutualExclusion extends Thread {
+
+	public static void main(String[] args) throws InterruptedException {
+		int n = Integer.parseInt(args[0]);
+		TwoMutex hilos[];
+		Object lock1 = new Object();
+		Object lock2 = new Object();
+		System.out.println("Creando " + n + " hilos");
+
+		hilos = new TwoMutex[n];
+	}
+}
