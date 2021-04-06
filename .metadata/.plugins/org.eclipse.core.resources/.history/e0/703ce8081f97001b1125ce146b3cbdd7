@@ -1,0 +1,14 @@
+package condicionesObject;
+
+public class Alumno extends Thread {
+	Bienvenida saludo;
+	
+	public Alumno(Bienvenida bienvenida) {
+		this.saludo = bienvenida;
+	}
+	
+	@Override
+	public void run() {
+		
+	}
+}

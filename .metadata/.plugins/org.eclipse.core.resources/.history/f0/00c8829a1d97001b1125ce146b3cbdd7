@@ -21,10 +21,4 @@ public class Bienvenida {
 		}
 	}
 
-	// Cuando el profesor saluda avisa a los alumnos con notifyAll de su llegada
-	public synchronized void llegadaProfesor(String nombre) {
-		System.out.println("Buenos días a todos. Soy el profesor " + nombre);
-		notifyAll();
-	}
-
 }

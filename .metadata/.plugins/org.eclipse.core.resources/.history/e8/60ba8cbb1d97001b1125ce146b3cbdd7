@@ -3,6 +3,7 @@ package condicionesObject;
 public class Bienvenida {
 
 	boolean claseComenzada;
+	String nombre;
 
 	public Bienvenida() {
 		this.claseComenzada = false;
@@ -22,7 +23,7 @@ public class Bienvenida {
 	}
 
 	// Cuando el profesor saluda avisa a los alumnos con notifyAll de su llegada
-	public synchronized void llegadaProfesor(String nombre) {
+	public synchronized void llegadaProfesor(String name) {
 		System.out.println("Buenos días a todos. Soy el profesor " + nombre);
 		notifyAll();
 	}
