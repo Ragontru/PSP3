@@ -8,7 +8,7 @@ public class Priority {
 		thread1.setPriority(10);
 
 		CounterThread thread2 = new CounterThread("Thread 2");
-		thread1.setPriority(1);
+		thread2.setPriority(1);
 
 		thread2.start();
 		thread1.start();
