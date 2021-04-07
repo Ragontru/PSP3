@@ -1,10 +1,10 @@
-package metodoSincronizado;
+package metodo_Sincronizado;
 
 public class Contador {
 
 	private int c = 0;
 
-	public void Contador(int num) {
+	public Contador(int num) {
 		this.c = num;
 	}
 
