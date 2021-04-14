@@ -1,4 +1,4 @@
-package condicionesObject;
+package condiciones;
 
 public class ComienzoClase {
 
@@ -6,9 +6,10 @@ public class ComienzoClase {
 		// Objeto compartido
 		Bienvenida b = new Bienvenida();
 
+		// Por argumento, el número de hilos
 		int nAlumnos = Integer.parseInt(args[0]);
 		for (int i = 0; i < nAlumnos; i++) {
-			new Alumno(b).start();
+			new Alumno(b, i).start();
 		}
 
 		Profesor profesor = new Profesor("Jorge Rodríguez", b);

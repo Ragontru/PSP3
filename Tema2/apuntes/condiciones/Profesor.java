@@ -1,4 +1,4 @@
-package condicionesObject;
+package condiciones;
 
 public class Profesor extends Thread {
 

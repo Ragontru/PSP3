@@ -1,4 +1,4 @@
-package condicionesObject;
+package condiciones;
 
 public class Bienvenida {
 
@@ -12,7 +12,7 @@ public class Bienvenida {
 	// por lo que los alumnos esperan con un wait
 	public synchronized void saludarProfesor() {
 		try {
-			while (claseComenzada == false) {
+			while (!claseComenzada) { // Mientras sea false
 				wait();
 			}
 		} catch (InterruptedException e) {
@@ -24,6 +24,7 @@ public class Bienvenida {
 	// Cuando el profesor saluda avisa a los alumnos con notifyAll de su llegada
 	public synchronized void llegadaProfesor(String nombre) {
 		System.out.println("Buenos días a todos. Soy el profesor " + nombre);
+		this.claseComenzada = true;
 		notifyAll();
 	}
 
