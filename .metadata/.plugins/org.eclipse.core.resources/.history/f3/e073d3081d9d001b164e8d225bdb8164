@@ -27,7 +27,7 @@ public class Relevos {
 			new Corredor(c, i).start();
 		}
 		
-		System.out.println("Todos los corredores creados. ");
+		System.out.println("Todos los corredores creados.");
 	}
 
 }
