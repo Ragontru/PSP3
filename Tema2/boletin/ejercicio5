@@ -1,0 +1,9 @@
+Los métodos static están asociados a una clase, en vez de al objeto 
+propiamente dicho. Comprueba qué sucede cuando un método sincronizado 
+está definido como static.
+
+Si el método synchronized es estático (static), el lock al que hace 
+referencia es de clase y no de objeto, por lo que se hace en exclusión 
+mútua con cualquier otro método estático synchronized de la misma 
+clase. 
+
