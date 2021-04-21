@@ -11,7 +11,7 @@ M
 boletin/practica/Persona.java,7\9\797041589a464d0886d20e71204333768bfec101
 M
 boletin/practica/Tarjeta.java,f\d\fd1e08f6c1654cf9abfb2cc366bb9bd03b9ffe3c
-H
-boletin/practica/PC.java,d\4\d410c5c33eceeca53e5e29f7d9377d529126f47c
-J
-boletin/practica/Mesa.java,f\2\f27abbbe51be58df5d912c3589065507437ba590
+O
+boletin/practica/Coworking.java,d\5\d5b72a7d92f31e4d6c47e25aba2c846fb2e55b4a
+M
+boletin/practica/Portero.java,b\0\b007c86bb9bd042230edd1bc5e1a328fa117b39a

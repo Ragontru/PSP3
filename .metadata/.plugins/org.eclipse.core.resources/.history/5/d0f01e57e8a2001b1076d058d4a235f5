@@ -1,12 +1,5 @@
 package practica;
 
-/**
- * COWORKING
- * Práctica entregable del tema 2 de PSP: Programación Multihilos
- * 
- * @author Raquel
- *
- */
 public class Coworking {
 
 	public static void main(String[] args) {

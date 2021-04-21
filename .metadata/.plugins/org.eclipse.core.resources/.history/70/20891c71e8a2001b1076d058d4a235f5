@@ -2,14 +2,6 @@ package practica;
 
 import java.util.Random;
 
-/**
- * Clase Persona
- * 
- * 
- * 
- * @author Raquel
- *
- */
 public class Persona extends Thread {
 
 	/**

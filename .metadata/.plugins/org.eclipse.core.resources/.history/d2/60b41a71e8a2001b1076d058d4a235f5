@@ -1,14 +1,5 @@
 package practica;
 
-/**
- * Clase Portero (Recurso compartido con los hilos Persona).
- * 
- * Permite el control de acceso al resto de recursos impidiendo que se produzcan
- * posibles interbloqueos
- * 
- * @author Raquel
- *
- */
 public class Portero {
 
 	/**
@@ -35,7 +26,7 @@ public class Portero {
 	/**
 	 * Monitor para liberar un asiento y notificar que existe una persona libre
 	 * 
-	 * @param idPersona ID de la persona
+	 * @param idPersona
 	 * @throws InterruptedException
 	 */
 	public synchronized void dejarPersona(int idPersona) throws InterruptedException {

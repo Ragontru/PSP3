@@ -2,14 +2,6 @@ package practica;
 
 import java.util.Random;
 
-/**
- * Clase Persona
- * 
- * 
- * 
- * @author Raquel
- *
- */
 public class Persona extends Thread {
 
 	/**
@@ -29,14 +21,6 @@ public class Persona extends Thread {
 	 */
 	private Portero asientos;
 
-	/**
-	 * Constructor de la clase Persona
-	 * 
-	 * @param idPersona ID de la persona
-	 * @param tarjetaIzq Tarjeta izquierda
-	 * @param tarjetaDer Tarjeta derecha
-	 * @param asientos Asientos libres
-	 */
 	public Persona(int idPersona, Tarjeta tarjetaIzq, Tarjeta tarjetaDer, Portero asientos) {
 		this.idPersona = idPersona;
 		this.tarjetaIzq = tarjetaIzq;
@@ -46,7 +30,7 @@ public class Persona extends Thread {
 	}
 
 	/**
-	 * Método run que se ejecuta indefinidamente, una por cada persona creada en la clase Coworking (principal)
+	 * 
 	 */
 	@Override
 	public void run() {

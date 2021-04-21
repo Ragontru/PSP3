@@ -2,6 +2,12 @@
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="ejercicio9.Corredor"/>
     <fullyQualifiedTypeName name="com.sun.source.doctree.SinceTree"/>
-    <fullyQualifiedTypeName name="java.lang.InterruptedException"/>
+    <fullyQualifiedTypeName name="practica.Tarjeta"/>
+    <fullyQualifiedTypeName name="java.lang.Runnable"/>
+    <fullyQualifiedTypeName name="java.lang.Math"/>
     <fullyQualifiedTypeName name="java.lang.Thread"/>
+    <fullyQualifiedTypeName name="javax.sql.rowset.spi.SyncResolver"/>
+    <fullyQualifiedTypeName name="java.util.Random"/>
+    <fullyQualifiedTypeName name="java.lang.InterruptedException"/>
+    <fullyQualifiedTypeName name="practica.Persona"/>
 </qualifiedTypeNameHistroy>

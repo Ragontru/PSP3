@@ -2,15 +2,6 @@ package practica;
 
 import java.util.Random;
 
-/**
- * Clase Tarjeta (Recurso compartido con los hilos Persona).
- * 
- * Cada tarjeta tiene su id, indicando su posición, y a cada persona le
- * corresponde 2 tarjetas concretras.
- * 
- * @author Raquel
- *
- */
 public class Tarjeta {
 
 	/**
@@ -22,7 +13,8 @@ public class Tarjeta {
 	 */
 	private int id;
 	/**
-	 * Indica si la tarjeta está libre o no. Si su valor es true, está libre.
+	 * Indica si la tarjeta está libre o no. Si su valor es true, está
+	 * libre.
 	 */
 	private boolean libre = true;
 
@@ -30,7 +22,7 @@ public class Tarjeta {
 	 * 
 	 * Constructor de la clase Tarjeta
 	 * 
-	 * @param id ID de la tarjeta
+	 * @param id
 	 */
 	public Tarjeta(int id) {
 		this.id = id;

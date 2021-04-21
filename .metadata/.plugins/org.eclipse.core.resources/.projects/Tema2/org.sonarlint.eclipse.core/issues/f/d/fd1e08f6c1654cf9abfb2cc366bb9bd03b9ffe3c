@@ -1,4 +1,19 @@
 
-s
-java:S2094"BRemove this empty class, write its code or make it an "interface".(È¸ÀûÿÿÿÿH¢RMINORZ
+a
+java:S17514"6Remove this "return" statement or make it conditional.(¸®Ã'8Ûôá®/HúRMAJORZBUG
+p	java:S106X"9Replace this use of System.out or System.err by a logger.(êÃÍÁúÿÿÿÿ8®ôä®/HşRMAJORZ
 CODE_SMELL
+k	java:S1067"9Replace this use of System.out or System.err by a logger.(ÿÒá 8ì…‘¯/HôRMAJORZ
+CODE_SMELL
+¯
+java:S1130U"wRemove the declaration of thrown exception 'java.lang.InterruptedException', as it cannot be thrown from method's body.(Ä¸ûßüÿÿÿÿ8ì…‘¯/HóRMINORZ
+CODE_SMELL
+\
+java:S2446Y"0"notify" may not wake up the appropriate thread.(­ÀôÉ8ì…‘¯/HõRMAJORZBUG
+k	java:S106I"9Replace this use of System.out or System.err by a logger.(ÿÒá 8©ÃÊ®/H¸RMAJORZ
+CODE_SMELL
+‚
+java:S11927"LDefine a constant instead of duplicating this literal "La persona " 3 times.(ÿÒá 8ì…‘¯/HïRCRITICALZ
+CODE_SMELL
+q
+java:S21843"@Cast one of the operands of this addition operation to a "long".(¾öÏœşÿÿÿÿ8Ûôá®/HùRMINORZBUG
