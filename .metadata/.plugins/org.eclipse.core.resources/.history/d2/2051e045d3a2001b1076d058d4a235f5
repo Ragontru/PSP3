@@ -1,0 +1,69 @@
+package practica;
+
+public class Persona extends Thread {
+
+	private int posicion;
+	private Tarjeta tarjetaIzq;
+	private Tarjeta tarjetaDer;
+	private Mesa mesa;
+
+	public Persona(int posicion, Tarjeta tarjetaIzq, Tarjeta tarjetaDer, Mesa pc) {
+		this.posicion = posicion;
+		this.tarjetaIzq = tarjetaIzq;
+		this.tarjetaDer = tarjetaDer;
+
+	}
+
+	@Override
+	public void run() {
+		// TODO
+		// Quitar el bucle para que se ejecute de manera ilimitada
+		for (int i = 0; i < 4; i++) {
+
+			pensar();
+			mesa.ponerEnCola();
+			cogerIzquierda();
+			cogerDerecha();
+			mesa.cogerPC();
+			soltarTarjetas();
+
+		}
+
+	}
+
+	public void usarPC() {
+		tarjetaIzq.setUsando();
+		tarjetaDer.setUsando();
+		mesa.setUsando();
+		Coworking.showMessage("La persona " + posicion + " ha cogido la tarjeta izquierda " + tarjetaIzq.toString()
+				+ " y la tarjeta derecha " + tarjetaDer.toString());
+		Coworking.showMessage("La persona " + posicion + " está usando el PC.");
+
+		int tiempo = (int) (Math.random() * 5000) + 2000;
+
+		try {
+			Thread.sleep(tiempo);
+		} catch (InterruptedException e) {
+			System.err.println("La persona no ha podido usar el PC por más de " + tiempo + " milisegundos.");
+		}
+
+		// tarjetaDer.setUsando();
+		// tarjetaIzq.setUsando();
+		// pc.setUsando();
+
+	}
+
+	public void pensar() {
+
+		int tiempo = (int) (Math.random() * 5000) + 2000;
+		
+		System.out.println("La persona " + this.posicion + " está pensando.");
+
+		try {
+			Thread.sleep(tiempo);
+		} catch (InterruptedException e) {
+			System.err.println("La persona no ha podido pensar por " + tiempo + " milisegundos.");
+		}
+	}
+
+}

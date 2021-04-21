@@ -1,0 +1,76 @@
+package practica;
+
+import java.util.Random;
+
+public class Persona extends Thread {
+
+	/**
+	 * Variable para generar un tiempo aleatorio
+	 */
+	private Random tiempo = new Random();
+	/**
+	 * ID de la persona
+	 */
+	private int idPersona;
+	/**
+	 * Variables para las tarjetas
+	 */
+	private Tarjeta tarjetaIzq, tarjetaDer;
+	/**
+	 * Variables para los asientos libres
+	 */
+	private Portero asientos;
+
+	public Persona(int idPersona, Tarjeta tarjetaIzq, Tarjeta tarjetaDer, Portero asientos) {
+		this.idPersona = idPersona;
+		this.tarjetaIzq = tarjetaIzq;
+		this.tarjetaDer = tarjetaDer;
+		this.asientos = asientos;
+
+	}
+
+	/**
+	 * 
+	 */
+	@Override
+	public void run() {
+		// Quitar el bucle para que se ejecute de manera ilimitada
+		for (int i = 0; i < 4; i++) {
+			try {
+				// Sentarse para hacer cola para trabajar
+				asientos.aceptarPersona(idPersona);
+				// Coger la tarjeta izquierda
+				tarjetaIzq.cogerTarjetaIzq(idPersona);
+
+				// Coger la tarjeta derecha
+				if (!tarjetaDer.cogerTarjetaDer(idPersona)) {
+					// Si no se consigue la tarjeta derecha, la persona se levantará y se volverá a
+					// buscar otra persona
+					System.out.println(
+							"La persona " + idPersona + " suelta la tarjeta. " + idPersona + " por exceso de tiempo.");
+					// Como no ha conseguido la tarjeta derecha, suelta la tarjeta izquierda
+					tarjetaDer.soltarTarjeta(idPersona);
+					// Como no ha conseguido la tarjeta derecha, libera el asiento
+					asientos.dejarPersona(idPersona);
+					System.out.println("La persona " + idPersona + " está pensando.");
+
+					try {
+						// El tiempo que tarda la persona en pensar, entre 2000 y 5000 milisegundos
+						Persona.sleep((tiempo.nextInt(5000) + 2000));
+					} catch (InterruptedException ex) {
+						System.out.println("Error. Descripción: " + ex.toString());
+					}
+				}
+
+				// Si consigue la tarjeta derecha
+				System.out.println("La persona " + idPersona + " está trabajando.");
+
+			} catch (InterruptedException e) {
+				System.err.println("Ha ocurrido un error");
+				// e.printStackTrace();
+			}
+		}
+
+	}
+
+}

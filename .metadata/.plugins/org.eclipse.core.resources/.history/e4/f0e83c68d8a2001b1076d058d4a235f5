@@ -1,0 +1,18 @@
+package practica;
+
+public class Portero {
+
+	/**
+	 * Debe ser un asiento menos al número de personas para asegurar que al menos
+	 * una esté usándolo
+	 */
+	private int asientosLibres = 4;
+
+	public synchronized void aceptarPersona(int idPersona) throws InterruptedException {
+		while (asientosLibres == 0) {
+			this.wait();
+		}
+
+		System.out.println("La persona " + idPersona + " se ha sentado sentada.");
+	}
+}

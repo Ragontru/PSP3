@@ -1,0 +1,26 @@
+package practica;
+
+public class Persona extends Thread {
+
+	private int posicion;
+	private Tarjeta tarjetaIzq, tarjetaDer;
+	private Portero portero;
+
+	public Persona(int posicion, Tarjeta tarjetaIzq, Tarjeta tarjetaDer, Mesa pc) {
+		this.posicion = posicion;
+		this.tarjetaIzq = tarjetaIzq;
+		this.tarjetaDer = tarjetaDer;
+
+	}
+
+	@Override
+	public void run() {
+		// TODO
+		// Quitar el bucle para que se ejecute de manera ilimitada
+		for (int i = 0; i < 4; i++) {
+
+		}
+
+	}
+
+}

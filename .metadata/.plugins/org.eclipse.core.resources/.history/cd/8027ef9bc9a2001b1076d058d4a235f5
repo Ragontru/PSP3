@@ -1,0 +1,26 @@
+package practica;
+
+public class Persona implements Runnable {
+
+	private int posicion;
+	private Tarjeta tarjetaIzq;
+	private Tarjeta tarjetaDer;
+	private PC pc;
+	private Thread hilo;
+
+	public Persona(int posicion, Tarjeta tarjetaIzq, Tarjeta tarjetaDer, PC pc) {
+		this.posicion = posicion;
+		this.tarjetaIzq = tarjetaIzq;
+		this.tarjetaDer = tarjetaDer;
+		hilo = new Thread(this);
+		hilo.start();
+
+	}
+
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

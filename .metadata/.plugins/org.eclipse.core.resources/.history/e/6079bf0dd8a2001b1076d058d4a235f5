@@ -1,0 +1,10 @@
+package practica;
+
+public class Portero {
+
+	/**
+	 * 
+	 */
+	private int asientos = 4;
+
+}

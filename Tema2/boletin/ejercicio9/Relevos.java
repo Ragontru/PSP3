@@ -17,17 +17,28 @@ package ejercicio9;
  */
 
 public class Relevos {
-	
-	public static void main(String[] args) {
+
+	public static void main(String[] args) throws InterruptedException {
 		// Objeto compartido
 		Carrera c = new Carrera();
-		
-		int nCorredores = Integer.parseInt(args[0]);
-		for (int i = 0; i < nCorredores; i++) {
-			new Corredor(c, i).start();
+		Corredor[] corredores = new Corredor[4];
+
+		for (int i = 0; i < corredores.length; i++) {
+			corredores[i] = new Corredor(c, i + 1);
 		}
-		
-		System.out.println("Todos los corredores creados.");
+
+		System.out.println("Todos los hijos creados");
+		System.out.println("Doy la salida!");
+
+		for (int i = 0; i < corredores.length; i++) {
+			corredores[i].start();
+		}
+
+		for (int i = 0; i < corredores.length; i++) {
+			corredores[i].join();
+		}
+
+		System.out.println("Todos los hilos terminados");
 	}
 
 }

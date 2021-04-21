@@ -1,0 +1,21 @@
+package practica;
+
+public class Tarjeta {
+
+	private int id;
+	private boolean usada;
+
+	public Tarjeta(int id) {
+		this.id = id;
+		this.usada = false;
+	}
+
+	public void setUsando() {
+		if (usada) {
+			usada = false;
+		} else {
+			usada = true;
+		}
+
+	}
+}

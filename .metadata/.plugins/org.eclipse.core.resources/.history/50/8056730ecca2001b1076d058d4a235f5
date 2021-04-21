@@ -1,0 +1,14 @@
+package practica;
+
+public class Tarjeta {
+
+	public Tarjeta(int i) {
+		// TODO Auto-generated constructor stub
+	}
+
+	public void setUsando() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

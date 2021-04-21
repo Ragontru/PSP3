@@ -1,0 +1,34 @@
+package practica;
+
+import java.util.Random;
+
+public class Persona extends Thread {
+
+	/**
+	 * Variable para generar un tiempo aleatorio
+	 */
+	private Random tiempo = new Random();
+	/**
+	 * ID
+	 */
+	private int posicion;
+	private Tarjeta tarjetaIzq, tarjetaDer;
+	private Portero asientos;
+
+	public Persona(int posicion, Tarjeta tarjetaIzq, Tarjeta tarjetaDer, Portero asientos) {
+		this.posicion = posicion;
+		this.tarjetaIzq = tarjetaIzq;
+		this.tarjetaDer = tarjetaDer;
+
+	}
+
+	@Override
+	public void run() {
+		// Quitar el bucle para que se ejecute de manera ilimitada
+		for (int i = 0; i < 4; i++) {
+
+		}
+
+	}
+
+}

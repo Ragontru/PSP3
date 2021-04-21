@@ -1,0 +1,23 @@
+package practica;
+
+public class PC {
+
+	private boolean usado = false;
+	
+	public PC() {
+		this.setUsando(false);
+	}
+	
+	public void setUsando(boolean estado) {
+		if (estado) {
+			usado = false;
+		} else {
+			usado = true;
+		}
+		
+		
+	}
+	
+	
+
+}

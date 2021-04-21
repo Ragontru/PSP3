@@ -1,0 +1,3 @@
+
+l
+java:S2134"@Don't extend "Thread", since the "run" method is not overridden.(½À¬Ê8œ¬ì…/H¡RMAJORZBUG

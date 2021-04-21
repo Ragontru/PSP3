@@ -1,0 +1,18 @@
+package practica;
+
+public class Tarjeta {
+
+	private int id;
+	private boolean usada;
+
+	public Tarjeta(int id) {
+		this.id = id;
+		this.setUsando(false);
+	}
+
+	public void setUsando() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

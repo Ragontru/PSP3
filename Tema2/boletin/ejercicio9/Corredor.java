@@ -2,8 +2,8 @@ package ejercicio9;
 
 public class Corredor extends Thread {
 
-	Carrera carrera;
-	int i;
+	private Carrera carrera;
+	private int i;
 
 	public Corredor(Carrera carrera, int i) {
 		this.carrera = carrera;
@@ -12,15 +12,21 @@ public class Corredor extends Thread {
 
 	@Override
 	public void run() {
-		System.out.println("Soy el corredor " + this.i + ", corriendo . . .");
 		try {
-			Thread.sleep(2000);
-			carrera.correr();
-			carrera.terminar(i);
+			relevar();
 		} catch (InterruptedException e) {
-			System.err.println("Thread corredor " + this.i + " interrumpido");
-			Thread.currentThread().interrupt();
-			System.exit(-1);
+			e.printStackTrace();
 		}
+		terminar();
+	}
+
+	public synchronized void relevar() throws InterruptedException {
+		carrera.correr(i);
+		System.out.println("Soy el corredor " + this.i + ", corriendo . . .");
+	}
+
+	public synchronized void terminar() {
+		System.out.println("Terminé. Pasando el relevo al hijo " + i);
+		carrera.terminar();
 	}
 }

@@ -1,0 +1,11 @@
+package practica;
+
+public class Portero {
+
+	/**
+	 * Debe ser un asiento menos al número de personas para asegurar que al menos
+	 * una esté usándolo
+	 */
+	private int asientos = 4;
+
+}

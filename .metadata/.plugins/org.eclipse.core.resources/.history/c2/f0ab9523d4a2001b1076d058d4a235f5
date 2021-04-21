@@ -1,0 +1,14 @@
+package practica;
+
+import java.util.Random;
+
+public class Tarjeta {
+
+	private Random tiempo = new Random();
+	private int id;
+	private boolean libre = true;
+
+	public Tarjeta(int id) {
+		this.id = id;
+	}
+}
