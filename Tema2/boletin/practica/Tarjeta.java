@@ -37,12 +37,11 @@ public class Tarjeta {
 	}
 
 	/**
-	 * 
 	 * Monitor para coger la tarjeta derecha. En caso de que no consiga cogerla en
 	 * el tiempo dado, volvería al estado de pensar
 	 * 
 	 * @param idPersona ID de la persona
-	 * @return Si devuelve true, continua el proceso de uso porque tendría las dos
+	 * @return Si devuelve true, continúa el proceso de uso porque tendría las dos
 	 *         tarjetas; si devuelve false, volvería al estado de pensar
 	 * @throws InterruptedException
 	 */
