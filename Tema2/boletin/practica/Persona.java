@@ -79,8 +79,8 @@ public class Persona extends Thread {
 					try {
 						// El tiempo que tarda la persona en pensar, entre 2000 y 5000 milisegundos
 						Persona.sleep((tiempo.nextInt(5000) + 2000));
-					} catch (InterruptedException ex) {
-						System.out.println("Error. Descripción: " + ex.toString());
+					} catch (InterruptedException e) {
+						e.printStackTrace();
 					}
 				}
 
@@ -99,8 +99,8 @@ public class Persona extends Thread {
 					try {
 						// El tiempo que tarda la persona en pensar, entre 2000 y 5000 milisegundos
 						Persona.sleep((tiempo.nextInt(5000) + 2000));
-					} catch (InterruptedException ex) {
-						System.out.println("Error. Descripción: " + ex.toString());
+					} catch (InterruptedException e) {
+						System.err.println("Error en el tiempo de pensar.");
 					}
 
 				}

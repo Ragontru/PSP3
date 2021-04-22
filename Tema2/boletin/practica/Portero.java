@@ -38,7 +38,7 @@ public class Portero {
 	 * @param idPersona ID de la persona
 	 * @throws InterruptedException
 	 */
-	public synchronized void dejarPersona(int idPersona) throws InterruptedException {
+	public synchronized void dejarPersona(int idPersona){
 		asientosLibres++;
 		System.out.println("La persona " + idPersona + " se levanta de la mesa.");
 		this.notify();

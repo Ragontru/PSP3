@@ -25,7 +25,7 @@ public class PC {
 	 * Constructor de la clase PC
 	 */
 	public PC() {
-		this.libre = true;
+		
 	}
 
 	/**
@@ -48,6 +48,12 @@ public class PC {
 		return true;
 	}
 
+	/**
+	 * Monitor para soltar el PC y volver a pensar
+	 * 
+	 * @param idPersona ID de la persona
+	 * @throws InterruptedException
+	 */
 	public synchronized void soltarPC(int idPersona) throws InterruptedException {
 
 		libre = true;

@@ -52,7 +52,6 @@ public class Tarjeta {
 		}
 
 		System.out.println("La persona " + idPersona + " coge la tarjeta " + id);
-
 		libre = false;
 		return true;
 	}
@@ -81,7 +80,7 @@ public class Tarjeta {
 	 * @param idPersona ID de la persona
 	 * @throws InterruptedException
 	 */
-	public synchronized void soltarTarjeta(int idPersona) throws InterruptedException {
+	public synchronized void soltarTarjeta(int idPersona) {
 
 		libre = true;
 		System.out.println("La persona " + idPersona + " suelta la tarjeta " + id);
