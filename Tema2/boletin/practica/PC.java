@@ -39,7 +39,7 @@ public class PC {
 	 */
 	public synchronized boolean cogerPC(int idPersona) throws InterruptedException {
 		while (!libre) {
-			this.wait(tiempo.nextInt(5000) + 2000);
+			this.wait(tiempo.nextInt(5000) + 500);
 			return false;
 		}
 
@@ -54,10 +54,10 @@ public class PC {
 	 * @param idPersona ID de la persona
 	 * @throws InterruptedException
 	 */
-	public synchronized void soltarPC(int idPersona) throws InterruptedException {
+	public synchronized void soltarPC(int idPersona){
 
 		libre = true;
 		System.out.println("La persona " + idPersona + " deja de usar el ordenador.");
-		this.notify();
+		this.notifyAll();
 	}
 }

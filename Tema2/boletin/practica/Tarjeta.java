@@ -47,7 +47,7 @@ public class Tarjeta {
 	 */
 	public synchronized boolean cogerTarjetaDer(int idPersona) throws InterruptedException {
 		while (!libre) {
-			this.wait(tiempo.nextInt(5000) + 2000);
+			this.wait(tiempo.nextInt(5000) + 500);
 			return false;
 		}
 
@@ -84,7 +84,7 @@ public class Tarjeta {
 
 		libre = true;
 		System.out.println("La persona " + idPersona + " suelta la tarjeta " + id);
-		this.notify();
+		this.notifyAll();
 	}
 
 }

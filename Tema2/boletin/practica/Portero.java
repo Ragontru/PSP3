@@ -41,7 +41,7 @@ public class Portero {
 	public synchronized void dejarPersona(int idPersona){
 		asientosLibres++;
 		System.out.println("La persona " + idPersona + " se levanta de la mesa.");
-		this.notify();
+		this.notifyAll();
 	}
 
 }

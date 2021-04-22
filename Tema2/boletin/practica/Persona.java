@@ -77,8 +77,8 @@ public class Persona extends Thread {
 					System.out.println("La persona " + idPersona + " está pensando.");
 
 					try {
-						// El tiempo que tarda la persona en pensar, entre 2000 y 5000 milisegundos
-						Persona.sleep((tiempo.nextInt(5000) + 2000));
+						// El tiempo que tarda la persona en pensar, entre 500 y 5000 milisegundos
+						Persona.sleep((tiempo.nextInt(5000) + 500));
 					} catch (InterruptedException e) {
 						e.printStackTrace();
 					}
@@ -97,8 +97,8 @@ public class Persona extends Thread {
 					System.out.println("La persona " + idPersona + " está pensando.");
 
 					try {
-						// El tiempo que tarda la persona en pensar, entre 2000 y 5000 milisegundos
-						Persona.sleep((tiempo.nextInt(5000) + 2000));
+						// El tiempo que tarda la persona en pensar, entre 500 y 5000 milisegundos
+						Persona.sleep((tiempo.nextInt(5000) + 500));
 					} catch (InterruptedException e) {
 						System.err.println("Error en el tiempo de pensar.");
 					}
@@ -109,7 +109,7 @@ public class Persona extends Thread {
 				System.out.println("La persona " + idPersona + " está trabajando.");
 				// Tiempo aleatorio que pasa la persona trabajando
 				try {
-					sleep(tiempo.nextInt(5000) + 2000);
+					sleep(tiempo.nextInt(5000) + 500);
 				} catch (InterruptedException e) {
 					System.err.println("Error en el tiempo de trabajo.");
 				}
@@ -121,7 +121,7 @@ public class Persona extends Thread {
 
 				System.out.println("La persona " + idPersona + " está pensando.");
 				try {
-					Persona.sleep(tiempo.nextInt(5000) + 2000);
+					Persona.sleep(tiempo.nextInt(5000) + 500);
 				} catch (InterruptedException e) {
 					System.err.println("Error en el tiempo de pensar.");
 				}
