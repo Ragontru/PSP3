@@ -1,70 +1,70 @@
 
 m
-java:S1141O"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ8®¯ü±/H§RMAJORZ
+java:S1141c"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ8Ğ±î±/HÚRMAJORZ
 CODE_SMELL
-o	java:S125ƒ"<This block of commented-out lines of code should be removed.(†€éˆ8ŒÌë¯/H©RMAJORZ
-CODE_SMELL
-p	java:S106M"9Replace this use of System.out or System.err by a logger.(·Ø£›øÿÿÿÿ8ÊÓç±/HªRMAJORZ
-CODE_SMELL
-m
-java:S1141c"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ8Ğ±î±/H«RMAJORZ
-CODE_SMELL
-m
-java:S1141o"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ8„ÔÛ±/H­RMAJORZ
-CODE_SMELL
-r
-java:S2142f"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€8ŒÌë¯/H¯RMAJORZBUG
-s
-java:S2142"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€8Ğ±î±/H°RMAJORZBUG
-[
-java:S1659"(Declare "tarjetaDer" on a separate line.(¦õê8ÕşÇ¯/H±RMINORZ
-CODE_SMELL
-p	java:S106m"9Replace this use of System.out or System.err by a logger.(”Ä¬›ûÿÿÿÿ8£ÛÑ±/H²RMAJORZ
-CODE_SMELL
-p	java:S106z"9Replace this use of System.out or System.err by a logger.(·Ø£›øÿÿÿÿ8–Ó‚²/H³RMAJORZ
-CODE_SMELL
-q	java:S106‚"9Replace this use of System.out or System.err by a logger.(§¿£•üÿÿÿÿ8®¯ü±/H´RMAJORZ
-CODE_SMELL
-p	java:S106a"9Replace this use of System.out or System.err by a logger.(·Ø£›øÿÿÿÿ8Ğ±î±/HµRMAJORZ
-CODE_SMELL
-r
-java:S2142R"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€8®¯ü±/H¶RMAJORZBUG
-k	java:S106r"9Replace this use of System.out or System.err by a logger.(ôŸƒ™8ŒÌë¯/H·RMAJORZ
-CODE_SMELL
-‡
-java:S1192G"LDefine a constant instead of duplicating this literal "La persona " 6 times.(åÄüëıÿÿÿÿ8¤¸¹˜“/H¸RCRITICALZ
+q	java:S106‚"9Replace this use of System.out or System.err by a logger.(§¿£•üÿÿÿÿ8®¯ü±/HÜRMAJORZ
 CODE_SMELL
 Œ
-java:S1192M"QDefine a constant instead of duplicating this literal " estÃ¡ pensando." 3 times.(·Ø£›øÿÿÿÿ8¤¸¹˜“/H¿RCRITICALZ
+java:S1192M"QDefine a constant instead of duplicating this literal " estÃ¡ pensando." 3 times.(·Ø£›øÿÿÿÿ8¤¸¹˜“/HİRCRITICALZ
 CODE_SMELL
 q
-java:S2184p"@Cast one of the operands of this addition operation to a "long".(Óææ‹ÿÿÿÿÿ8¤¸¹˜“/HÃRMINORZBUG
-l
-java:S2184|"@Cast one of the operands of this addition operation to a "long".(íî›ß8¤¸¹˜“/HÄRMINORZBUG
+java:S3252e"6Use static access with "java.lang.Thread" for "sleep".(Œì·ûÿÿÿÿ8¤¸¹˜“/HáRCRITICALZ
+CODE_SMELL
 m
-java:S1141{"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ8¤¸¹˜“/HÅRMAJORZ
+java:S1141O"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ8®¯ü±/HâRMAJORZ
+CODE_SMELL
+r
+java:S2142R"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€8®¯ü±/HäRMAJORZBUG
+p	java:S106a"9Replace this use of System.out or System.err by a logger.(·Ø£›øÿÿÿÿ8Ğ±î±/HåRMAJORZ
+CODE_SMELL
+k	java:S106r"9Replace this use of System.out or System.err by a logger.(ôŸƒ™8ŒÌë¯/HæRMAJORZ
+CODE_SMELL
+k	java:S106g"9Replace this use of System.out or System.err by a logger.(¡ÙáÂ8¤¸¹˜“/HçRMAJORZ
+CODE_SMELL
+p	java:S106z"9Replace this use of System.out or System.err by a logger.(·Ø£›øÿÿÿÿ8–Ó‚²/HèRMAJORZ
+CODE_SMELL
+p	java:S106G"9Replace this use of System.out or System.err by a logger.(åÄüëıÿÿÿÿ8¤¸¹˜“/HéRMAJORZ
+CODE_SMELL
+q
+java:S2184p"@Cast one of the operands of this addition operation to a "long".(Óææ‹ÿÿÿÿÿ8¤¸¹˜“/HêRMINORZBUG
+k	java:S106~"9Replace this use of System.out or System.err by a logger.(¡ÙáÂ8¤¸¹˜“/HëRMAJORZ
+CODE_SMELL
+p	java:S106M"9Replace this use of System.out or System.err by a logger.(·Ø£›øÿÿÿÿ8ÊÓç±/HìRMAJORZ
+CODE_SMELL
+‡
+java:S1192G"LDefine a constant instead of duplicating this literal "La persona " 6 times.(åÄüëıÿÿÿÿ8¤¸¹˜“/HíRCRITICALZ
+CODE_SMELL
+m
+java:S1141o"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ8„ÔÛ±/HôRMAJORZ
+CODE_SMELL
+p	java:S106m"9Replace this use of System.out or System.err by a logger.(”Ä¬›ûÿÿÿÿ8£ÛÑ±/HöRMAJORZ
+CODE_SMELL
+l
+java:S3252|"6Use static access with "java.lang.Thread" for "sleep".(íî›ß8¤¸¹˜“/H÷RCRITICALZ
+CODE_SMELL
+r
+java:S2142q"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€8¤¸¹˜“/HøRMAJORZBUG
+q
+java:S3252Q"6Use static access with "java.lang.Thread" for "sleep".(Œì·ûÿÿÿÿ8¤¸¹˜“/HùRCRITICALZ
 CODE_SMELL
 ˆ
-java:S3776:"RRefactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.(“–ış8¤¸¹˜“/HÇRCRITICALZ
-CODE_SMELL
-p	java:S106G"9Replace this use of System.out or System.err by a logger.(åÄüëıÿÿÿÿ8¤¸¹˜“/HÑRMAJORZ
-CODE_SMELL
-q
-java:S3252Q"6Use static access with "java.lang.Thread" for "sleep".(Œì·ûÿÿÿÿ8¤¸¹˜“/HÒRCRITICALZ
-CODE_SMELL
-k	java:S106["9Replace this use of System.out or System.err by a logger.(ÆÀûı8¤¸¹˜“/HÓRMAJORZ
-CODE_SMELL
-q
-java:S3252e"6Use static access with "java.lang.Thread" for "sleep".(Œì·ûÿÿÿÿ8¤¸¹˜“/HÔRCRITICALZ
-CODE_SMELL
-k	java:S106g"9Replace this use of System.out or System.err by a logger.(¡ÙáÂ8¤¸¹˜“/HÕRMAJORZ
+java:S3776:"RRefactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.(“–ış8¤¸¹˜“/HúRCRITICALZ
 CODE_SMELL
 r
-java:S2142q"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€8¤¸¹˜“/HÖRMAJORZBUG
+java:S2142}"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€8¤¸¹˜“/H„	RMAJORZBUG
+s
+java:S2142"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€8Ğ±î±/H…	RMAJORZBUG
+m
+java:S1141{"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ8¤¸¹˜“/H†	RMAJORZ
+CODE_SMELL
+k	java:S106["9Replace this use of System.out or System.err by a logger.(ÆÀûı8¤¸¹˜“/Hˆ	RMAJORZ
+CODE_SMELL
 r
-java:S2142}"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€8¤¸¹˜“/H×RMAJORZBUG
+java:S2142f"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€8ŒÌë¯/H‰	RMAJORZBUG
+[
+java:S1659"(Declare "tarjetaDer" on a separate line.(¦õê8ÕşÇ¯/HŠ	RMINORZ
+CODE_SMELL
+o	java:S125ƒ"<This block of commented-out lines of code should be removed.(†€éˆ8ŒÌë¯/H‹	RMAJORZ
+CODE_SMELL
 l
-java:S3252|"6Use static access with "java.lang.Thread" for "sleep".(íî›ß8¤¸¹˜“/HØRCRITICALZ
-CODE_SMELL
-k	java:S106~"9Replace this use of System.out or System.err by a logger.(¡ÙáÂ8¤¸¹˜“/HÙRMAJORZ
-CODE_SMELL
+java:S2184|"@Cast one of the operands of this addition operation to a "long".(íî›ß8¤¸¹˜“/HŒ	RMINORZBUG
