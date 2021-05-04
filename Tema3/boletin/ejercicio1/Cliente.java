@@ -7,26 +7,21 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
-import java.net.ConnectException;
 import java.net.InetSocketAddress;
 import java.net.Socket;
 
-public class ProgramaA {
+public class Cliente {
 
-	public static String direccion = ".\\boletin\\ejercicio1\\ArchivoEmisor";
+	public static void main(String[] args) throws IOException {
 
-	public static void main(String[] args) {
+		File archivo = new File(".\\boletin\\ejercicio1\\FicheroEmisor.txt");
+		FileReader fr = new FileReader(archivo);
+		BufferedReader br = new BufferedReader(fr);
 
 		try {
-			File file = new File(direccion);
-
-			FileReader fr;
-			fr = new FileReader(file);
-			BufferedReader br = new BufferedReader(fr);
-
+			System.out.println("Creando socket cliente");
 			Socket clienteSocket = new Socket();
 			InetSocketAddress addr = new InetSocketAddress("localhost", 5555);
-
 			clienteSocket.connect(addr);
 
 			InputStream is = clienteSocket.getInputStream();
@@ -37,17 +32,15 @@ public class ProgramaA {
 				String linea = br.readLine();
 				System.out.println(linea);
 				os.write(linea.getBytes());
-
 			}
-			
+
 			os.close();
-			
+			br.close();
+			fr.close();
+			clienteSocket.close();
+
 			System.out.println("Mensaje enviado");
 
-		} catch (FileNotFoundException e) {
-			System.err.println("No existe el archivo emisor");
-		}catch (ConnectException e) {
-			System.err.println("No es posible realizar la conexión");
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
