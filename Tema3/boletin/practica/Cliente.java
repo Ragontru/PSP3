@@ -1,5 +1,7 @@
 package practica;
 
+import java.io.DataInputStream;
+import java.io.DataOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
@@ -9,9 +11,11 @@ import java.util.Scanner;
 
 public class Cliente {
 
+	private static Scanner teclado = new Scanner(System.in);
+	private static DataInputStream entrada;
+	private static DataOutputStream salida;
+	
 	public static void main(String[] args) {
-
-		Scanner teclado = new Scanner(System.in);
 
 		try {
 			System.out.println("Creando socket cliente");

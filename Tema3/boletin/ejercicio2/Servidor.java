@@ -9,13 +9,14 @@ import java.net.Socket;
 
 public class Servidor {
 
-	public static void main(String[] args) {
-
+	public static void main(String[] args) throws InterruptedException {
+		String dev = "";
+		String mensaje;
 		try {
 			System.out.println("Creando socket servidor");
 			ServerSocket server = new ServerSocket();
 
-			System.out.println("Realizando blind");
+			System.out.println("Realizando el bind");
 			InetSocketAddress addr = new InetSocketAddress("localhost", 5555);
 			server.bind(addr);
 
@@ -25,66 +26,46 @@ public class Servidor {
 			System.out.println("Conexión recibida");
 			InputStream is = newSocket.getInputStream();
 			OutputStream os = newSocket.getOutputStream();
-			byte[] mensaje = new byte[25];
+			byte[] message = new byte[40];
 
-			while (dev.compareTo("cerrar" != 0)) {
-//				if (is.read(message) > -1) {
-				message = new byte[35];
-				is.read(message);
-				String linea = new String(message);
-				System.out.println(linea.length() + ".");
-				if (pregunta.trim().equalsIgnoreCase("salir")) {
-					salida = true;
-				} else {
-					for (int i = 0; i < linea.length(); i++) {
-//						String v = " ";
-//						os.write(v.getBytes());
-						if (linea.charAt(i) == '?') {
-
-							System.out.println("Pregunta finalizada");
-							System.out.println(pregunta);
-							i = linea.length();
-							String vuelta;
-							String preguntaBuena = pregunta.trim();
-							//
-							switch (preguntaBuena) {
-							case "¿Cómo te llamas":
-								vuelta = "Me llamo Ejercicio 2".trim();
-								os.write(vuelta.getBytes());
-								break;
-							case "¿Cuántas líneas de código tienes":
-								vuelta = "pfff muchas no se";
-								os.write(vuelta.getBytes());
-								break;
-							default:
-								System.out.println(preguntaBuena + ".");
-								vuelta = "No entendi";
-								os.write(vuelta.getBytes());
-
-							}
-							pregunta = "";
-						} else {
-
-							pregunta = pregunta.concat(linea.charAt(i) + "");
-							System.out.println(pregunta);
-						}
+			while (dev.compareTo("cerrar") != 0) {
+				do {
+					is.read(message);
+					dev = dev.concat(" " + new String(message));
+					dev = dev.trim();
+					message = new byte[40];
+					if (!dev.contains("?")) {
+						mensaje = " ";
+						os.write(mensaje.getBytes());
+						os.flush();
 					}
+				} while (!(dev.contains("?") || dev.compareTo("cerrar") == 0));
+				System.out.println(dev);
+				if (dev.equalsIgnoreCase("¿Como te llamas?")) {
+					mensaje = "Me llamo Ejercicio 2";
+					os.write(mensaje.getBytes());
+					os.flush();
+					dev = "";
+				} else if (dev.equalsIgnoreCase("¿Cuantas lineas de codigo tienes?")) {
+					mensaje = "Tengo 73 lineas de codigo";
+					os.write(mensaje.getBytes());
+					os.flush();
+					dev = "";
+				} else {
+					mensaje = "No he entendido la pregunta";
+					os.write(mensaje.getBytes());
+					os.flush();
+					dev = "";
 				}
-				os.write(0);
-				os.flush();
-//				}else {
-//					salida = true;
-//				}
-
 			}
 			System.out.println("Cerrando el nuevo socket");
 			newSocket.close();
-
-			System.out.println("Cerrando el socket servidor");
+			System.out.println("Cerrando el nuevo servidor");
 			server.close();
-			System.out.println("Terminado");
+			System.out.println("Terminando");
+		} catch (
 
-		} catch (IOException e) {
+		IOException e) {
 			e.printStackTrace();
 		}
 	}
