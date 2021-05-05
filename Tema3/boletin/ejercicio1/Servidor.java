@@ -22,7 +22,7 @@ public class Servidor {
 			System.out.println("Creando socket servidor");
 			ServerSocket server = new ServerSocket();
 
-			System.out.println("Realizando blind");
+			System.out.println("Realizando bind");
 			InetSocketAddress addr = new InetSocketAddress("localhost", 5555);
 			server.bind(addr);
 
@@ -44,11 +44,11 @@ public class Servidor {
 			bw.close();
 			pw.close();
 
-			System.out.println("Cerrando el nuevo socket");
+			System.out.println("Cerrando el nuevo socket.");
 			newSocket.close();
-			System.out.println("Cerrando el servidor");
+			System.out.println("Cerrando el servidor.");
 			server.close();
-			System.out.println("Terminando");
+			System.out.println("Terminando.");
 
 		} catch (IOException e) {
 			e.printStackTrace();
