@@ -8,6 +8,7 @@
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="mensaje"/>
 			<item value="message"/>
 			<item value="ruta"/>
 			<item value="posicion"/>
@@ -16,6 +17,7 @@
 			<item value="tenedor"/>
 		</list>
 		<list key="replacehistory">
+			<item value="mensajes"/>
 			<item value="mensaje"/>
 			<item value="direccion"/>
 			<item value="idPersona"/>
