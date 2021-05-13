@@ -25,8 +25,11 @@ public class Cliente {
 			DataInputStream dis = new DataInputStream(is);
 			DataOutputStream dos = new DataOutputStream(os);
 			String escribe;
+			String opcion = null;
+			
+			
 
-			while (true) {
+			while (!opcion.equals("0")) {
 				do {
 					String lee = dis.readUTF();
 					System.out.println(lee);
