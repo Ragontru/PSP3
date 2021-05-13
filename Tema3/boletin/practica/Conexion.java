@@ -112,7 +112,7 @@ public class Conexion extends Thread {
 
 	private void revisaBuzon() {
 		this.correos = Buzon.buscarMensajes(usuario);
-		if (!correos.isEmpty()) {
+		if (!this.correos.isEmpty()) {
 			leerMensajes(correos);
 		} else {
 			try {

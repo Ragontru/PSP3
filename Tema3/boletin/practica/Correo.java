@@ -2,13 +2,9 @@ package practica;
 
 public class Correo {
 
-	private String receptor;
 	private String emisor;
 	private String mensaje;
-
-	public Correo() {
-
-	}
+	private String receptor;
 
 	public Correo(String receptor, String emisor, String mensaje) {
 		this.receptor = receptor;

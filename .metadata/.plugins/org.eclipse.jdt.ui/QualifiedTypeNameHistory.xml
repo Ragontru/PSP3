@@ -44,7 +44,7 @@
     <fullyQualifiedTypeName name="java.lang.Object"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="practica.Buzon"/>
-    <fullyQualifiedTypeName name="practica.Correo"/>
     <fullyQualifiedTypeName name="java.lang.NumberFormatException"/>
     <fullyQualifiedTypeName name="java.io.IOException"/>
+    <fullyQualifiedTypeName name="practica.Correo"/>
 </qualifiedTypeNameHistroy>
