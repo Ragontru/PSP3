@@ -5,22 +5,36 @@ import java.util.HashMap;
 
 public class Buzon {
 
-	private static HashMap<String, ArrayList<String>> buzon = new HashMap<>();
+	private HashMap<String, ArrayList<String>> buzon = new HashMap<>();
 
 	// TODO
-	public synchronized static boolean enviarMensaje(String mensaje) {
+	public synchronized void enviarMensaje(String usuario, String mensaje) {
 
-		boolean enviado = false;
+		ArrayList<String> aux;
+		aux = buzon.get(usuario);
 
-		return enviado;
+		if (aux == null) {
+			aux = new ArrayList<>();
+		}
+
+		aux.add(mensaje);
+		buzon.put(usuario, aux);
 
 	}
 
-	public synchronized static boolean leerMensaje() {
+	// TODO
+	public synchronized void leerMensaje(String usuario) {
 
-		boolean leido = false;
+		ArrayList<String> aux;
+		aux = buzon.get(usuario);
 
-		return leido;
+		if (aux == null) {
+			System.out.println("No hay mensajes nuevos");
+		} else {
+			while (!buzon.isEmpty()) {
+
+			}
+		}
 
 	}
 
