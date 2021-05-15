@@ -32,8 +32,13 @@ public class Conexion extends Thread {
 		// revisar contenido
 		// actuar
 
-		if ((informacion.equals("#"))) {
-
+		if (informacion.indexOf("#") != 0) {
+			buzon.leerMensaje(informacion);
+		} else {
+			int pos = informacion.indexOf("#", 1);
+			String usuario = informacion.substring(1, pos - 1);
+			String mensaje = informacion.substring(pos + 1);
+			buzon.enviarMensaje(usuario, mensaje);
 		}
 	}
 

@@ -7,7 +7,6 @@ public class Buzon {
 
 	private HashMap<String, ArrayList<String>> buzon = new HashMap<>();
 
-	// TODO
 	public synchronized void enviarMensaje(String usuario, String mensaje) {
 
 		ArrayList<String> aux;
@@ -32,7 +31,7 @@ public class Buzon {
 			System.out.println("No hay mensajes nuevos");
 		} else {
 			while (!buzon.isEmpty()) {
-
+				
 			}
 		}
 

@@ -25,7 +25,7 @@ public class Cliente {
 			DataOutputStream dos = new DataOutputStream(os);
 			Scanner teclado = new Scanner(System.in);
 			String usuario, receptor, mensaje, protocolo;
-			String opcion = null;
+			String opcion = "inicio";
 
 			System.out.println("Introduce el nombre de usuario: ");
 			usuario = teclado.nextLine();
@@ -39,17 +39,16 @@ public class Cliente {
 				System.out.println("\n 0. Salir");
 
 				opcion = teclado.nextLine();
-				dos.writeUTF(opcion);
+				//dos.writeUTF(opcion);
 
 				switch (opcion) {
 				case "0":
 					System.out.println("Cliente cerrado");
-					clienteSocket.close();
 					break;
 				case "1":
 					// Revisar buzón
 					// conexion y buzon
-					dos.writeUTF(usuario);					
+					dos.writeUTF(usuario);
 					break;
 				case "2":
 					// Escribir mensaje
@@ -58,7 +57,7 @@ public class Cliente {
 					receptor = teclado.nextLine();
 					System.out.println("Qué mensaje quieres enviarle?");
 					mensaje = teclado.nextLine();
-					protocolo = "#"+receptor+"#"+usuario+"#"+mensaje+"#";
+					protocolo = "#" + receptor + "#" + usuario + ":" + mensaje;
 					dos.writeUTF(protocolo);
 					break;
 				default:
@@ -66,12 +65,16 @@ public class Cliente {
 					break;
 				}
 
-				do {
-					String lee = dis.readUTF();
-					System.out.println(lee);
-				} while (dis.available() > 0);
+				if (!opcion.equals("0")) {
+					do {
+						String lee = dis.readUTF();
+						System.out.println(lee);
+					} while (dis.available() > 0);
+				}
 
 			}
+
+			System.out.println("PRUEBA: Pasa");
 
 		} catch (IOException e) {
 			e.printStackTrace();
