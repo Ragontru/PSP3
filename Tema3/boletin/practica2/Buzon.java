@@ -7,7 +7,7 @@ public class Buzon {
 
 	private HashMap<String, ArrayList<String>> buzon = new HashMap<>();
 
-	public synchronized void enviarMensaje(String usuario, String mensaje) {
+	public synchronized String enviarMensaje(String usuario, String mensaje) {
 
 		ArrayList<String> aux;
 		aux = buzon.get(usuario);
@@ -19,20 +19,26 @@ public class Buzon {
 		aux.add(mensaje);
 		buzon.put(usuario, aux);
 
+		return "Mensaje enviado al usuario " + usuario;
+
 	}
 
 	// TODO
-	public synchronized void leerMensaje(String usuario) {
+	public synchronized String leerMensaje(String usuario) {
 
-		ArrayList<String> aux;
-		aux = buzon.get(usuario);
+		ArrayList<String> aux = buzon.get(usuario);
+		String ultimo;
+		String mensajes="";
 
 		if (aux == null) {
-			System.out.println("No hay mensajes nuevos");
+			return "No hay mensajes nuevos";
 		} else {
-			while (!buzon.isEmpty()) {
-				
+			for (int i = 0; i < aux.size(); i++) {
+				ultimo = aux.get(i) + " // ";
+				mensajes = mensajes + ultimo;
 			}
+			buzon.remove(usuario);
+			return mensajes;
 		}
 
 	}

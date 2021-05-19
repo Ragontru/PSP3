@@ -24,7 +24,10 @@ public class Cliente {
 			DataInputStream dis = new DataInputStream(is);
 			DataOutputStream dos = new DataOutputStream(os);
 			Scanner teclado = new Scanner(System.in);
-			String usuario, receptor, mensaje, protocolo;
+			String usuario;
+			String receptor;
+			String mensaje;
+			String protocolo;
 			String opcion = "inicio";
 
 			System.out.println("Introduce el nombre de usuario: ");

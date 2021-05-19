@@ -16,16 +16,15 @@ public class Conexion extends Thread {
 	private DataOutputStream dos;
 	private Socket newSocket;
 	private String informacion;
+	private String contenido;
 
 	public Conexion(Socket newSocket, Buzon buzon) {
 		this.newSocket = newSocket;
 		this.buzon = buzon;
 
 		try {
-			this.is = newSocket.getInputStream();
-			this.os = newSocket.getOutputStream();
-			this.dis = new DataInputStream(is);
-			this.dos = new DataOutputStream(os);
+			this.dis = new DataInputStream(newSocket.getInputStream());
+			this.dos = new DataOutputStream(newSocket.getOutputStream());
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -50,9 +49,13 @@ public class Conexion extends Thread {
 			buzon.leerMensaje(informacion);
 		} else {
 			int pos = informacion.indexOf("#", 1);
-			String usuario = informacion.substring(1, pos - 1);
+			String usuario = informacion.substring(1, pos);
 			String mensaje = informacion.substring(pos + 1);
-			buzon.enviarMensaje(usuario, mensaje);
+			try {
+				dos.writeUTF(buzon.enviarMensaje(usuario, mensaje));
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
 		}
 	}
 
