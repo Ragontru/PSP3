@@ -3,11 +3,15 @@ package practica2;
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
 import java.net.Socket;
 
 public class Conexion extends Thread {
 
 	private Buzon buzon;
+	private InputStream is;
+	private OutputStream os;
 	private DataInputStream dis;
 	private DataOutputStream dos;
 	private Socket newSocket;
@@ -16,6 +20,16 @@ public class Conexion extends Thread {
 	public Conexion(Socket newSocket, Buzon buzon) {
 		this.newSocket = newSocket;
 		this.buzon = buzon;
+
+		try {
+			this.is = newSocket.getInputStream();
+			this.os = newSocket.getOutputStream();
+			this.dis = new DataInputStream(is);
+			this.dos = new DataOutputStream(os);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+
 	}
 
 	@Override

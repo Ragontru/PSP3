@@ -39,7 +39,6 @@ public class Cliente {
 				System.out.println("\n 0. Salir");
 
 				opcion = teclado.nextLine();
-				//dos.writeUTF(opcion);
 
 				switch (opcion) {
 				case "0":

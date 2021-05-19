@@ -20,7 +20,7 @@ public class Servidor {
 			ServerSocket servidor = new ServerSocket();
 
 			System.out.println("Realizando bind");
-			InetSocketAddress addr = new InetSocketAddress("localhost", 5556);
+			InetSocketAddress addr = new InetSocketAddress("localhost", 5555);
 			servidor.bind(addr);
 
 			while (true) {
@@ -28,11 +28,6 @@ public class Servidor {
 				try {
 					System.out.println("Aceptando conexiones");
 					newSocket = servidor.accept();
-
-					InputStream is = newSocket.getInputStream();
-					OutputStream os = newSocket.getOutputStream();
-					DataInputStream dis = new DataInputStream(is);
-					DataOutputStream dos = new DataOutputStream(os);
 
 					System.out.println("Conexión recibida.");
 					Conexion hilo = new Conexion(newSocket, buzon);
