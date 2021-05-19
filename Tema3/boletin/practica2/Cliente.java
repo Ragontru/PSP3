@@ -74,8 +74,6 @@ public class Cliente {
 
 			}
 
-			System.out.println("PRUEBA: Pasa");
-
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

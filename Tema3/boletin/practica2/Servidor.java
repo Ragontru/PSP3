@@ -20,7 +20,7 @@ public class Servidor {
 			ServerSocket servidor = new ServerSocket();
 
 			System.out.println("Realizando bind");
-			InetSocketAddress addr = new InetSocketAddress("localhost", 5555);
+			InetSocketAddress addr = new InetSocketAddress("localhost", 5556);
 			servidor.bind(addr);
 
 			while (true) {
