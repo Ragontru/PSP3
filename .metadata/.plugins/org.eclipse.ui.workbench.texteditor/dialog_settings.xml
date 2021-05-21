@@ -8,6 +8,7 @@
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="inicio"/>
 			<item value="dos"/>
 			<item value="dis"/>
 			<item value="DataOutputStream"/>
@@ -22,7 +23,6 @@
 			<item value="mensaje"/>
 			<item value="os.write"/>
 			<item value="message"/>
-			<item value="ruta"/>
 		</list>
 		<list key="replacehistory">
 			<item value="oos"/>

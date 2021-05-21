@@ -7,7 +7,7 @@ public class Buzon {
 
 	private HashMap<String, ArrayList<String>> buzon = new HashMap<>();
 
-	public synchronized String enviarMensaje(String usuario, String mensaje) {
+	public synchronized void enviarMensaje(String usuario, String mensaje) {
 
 		ArrayList<String> aux;
 		aux = buzon.get(usuario);
@@ -19,8 +19,6 @@ public class Buzon {
 		aux.add(mensaje);
 		buzon.put(usuario, aux);
 
-		return "Mensaje enviado al usuario " + usuario;
-
 	}
 
 	// TODO
@@ -28,7 +26,7 @@ public class Buzon {
 
 		ArrayList<String> aux = buzon.get(usuario);
 		String ultimo;
-		String mensajes="";
+		String mensajes = "";
 
 		if (aux == null) {
 			return "No hay mensajes nuevos";

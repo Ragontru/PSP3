@@ -3,15 +3,11 @@ package practica2;
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
 import java.net.Socket;
 
 public class Conexion extends Thread {
 
 	private Buzon buzon;
-	private InputStream is;
-	private OutputStream os;
 	private DataInputStream dis;
 	private DataOutputStream dos;
 	private Socket newSocket;
@@ -31,32 +27,54 @@ public class Conexion extends Thread {
 
 	}
 
+	// El cliente acaba porque finaliza su hilo
 	@Override
 	public void run() {
 		// volcar buffer
-		try {
-			do {
+
+		boolean salir = false;
+
+		while (salir != true) {
+
+			try {
 				informacion = dis.readUTF();
-			} while (dis.available() > 0);
-		} catch (IOException e) {
-			e.printStackTrace();
+				iniciar(informacion);
+			} catch (IOException e) {
+				try {
+					salir = true;
+					newSocket.close();
+				} catch (IOException ex) {
+					ex.printStackTrace();
+				}
+			}
+
 		}
+
+	}
+
+	private void iniciar(String informacion) {
 
 		// revisar contenido
 		// actuar
-
 		if (informacion.indexOf("#") != 0) {
-			buzon.leerMensaje(informacion);
+			try {
+				dos.writeUTF(buzon.leerMensaje(informacion));
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
 		} else {
 			int pos = informacion.indexOf("#", 1);
 			String usuario = informacion.substring(1, pos);
 			String mensaje = informacion.substring(pos + 1);
 			try {
-				dos.writeUTF(buzon.enviarMensaje(usuario, mensaje));
+				buzon.enviarMensaje(usuario, mensaje);
+				dos.writeUTF("Mensaje enviado al usuario " + usuario);
 			} catch (IOException e) {
 				e.printStackTrace();
 			}
+
 		}
+
 	}
 
 }
