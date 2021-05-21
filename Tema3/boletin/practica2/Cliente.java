@@ -68,7 +68,7 @@ public class Cliente {
 					break;
 				}
 
-				if (!opcion.equals("0")) {
+				if ((opcion.equals("1")) || (opcion.equals("2"))) {
 					do {
 						String lee = dis.readUTF();
 						System.out.println(lee);
