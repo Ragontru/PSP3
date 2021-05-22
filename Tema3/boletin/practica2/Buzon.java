@@ -3,10 +3,23 @@ package practica2;
 import java.util.ArrayList;
 import java.util.HashMap;
 
+/**
+ * 
+ * @author Raquel
+ *
+ */
 public class Buzon {
 
+	/**
+	 * 
+	 */
 	private HashMap<String, ArrayList<String>> buzon = new HashMap<>();
 
+	/**
+	 * 
+	 * @param usuario
+	 * @param mensaje
+	 */
 	public synchronized void enviarMensaje(String usuario, String mensaje) {
 
 		ArrayList<String> aux;
@@ -21,7 +34,11 @@ public class Buzon {
 
 	}
 
-	// TODO
+	/**
+	 * 
+	 * @param usuario
+	 * @return
+	 */
 	public synchronized String leerMensaje(String usuario) {
 
 		ArrayList<String> aux = buzon.get(usuario);

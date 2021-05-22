@@ -9,13 +9,29 @@ import java.net.InetSocketAddress;
 import java.net.Socket;
 import java.util.Scanner;
 
+/**
+ * Clase Cliente
+ * 
+ * Se encarga de crear el socket del cliente, conectarlo con el servidor y
+ * mostrarle al usuario las diferentes funciones seguido de su respuesta
+ * Debe iniciarse después de la clase Servidor
+ * 
+ * @author Raquel
+ *
+ */
 public class Cliente {
 
 	public static void main(String[] args) {
 
 		try {
 			System.out.println("Creando socket cliente");
+			/**
+			 * 
+			 */
 			Socket clienteSocket = new Socket();
+			/**
+			 * 
+			 */
 			InetSocketAddress addr = new InetSocketAddress("localhost", 5555);
 			clienteSocket.connect(addr);
 
@@ -24,11 +40,26 @@ public class Cliente {
 			DataInputStream dis = new DataInputStream(is);
 			DataOutputStream dos = new DataOutputStream(os);
 			Scanner teclado = new Scanner(System.in);
-
+			
+			/**
+			 * 
+			 */
 			String usuario;
+			/**
+			 * 
+			 */
 			String receptor;
+			/**
+			 * 
+			 */
 			String mensaje;
+			/**
+			 * 
+			 */
 			String protocolo;
+			/**
+			 * 
+			 */
 			String opcion = "inicio";
 
 			System.out.println("Introduce el nombre de usuario: ");
