@@ -6,6 +6,9 @@ import java.io.IOException;
 import java.net.Socket;
 
 /**
+ * Clase Conexion
+ * 
+ * Ejecuta el hilo asociado al cliente y trata las peticiones de este
  * 
  * @author Raquel
  *
@@ -13,31 +16,28 @@ import java.net.Socket;
 public class Conexion extends Thread {
 
 	/**
-	 * 
+	 * Variable para el buzon personal
 	 */
 	private Buzon buzon;
 	/**
-	 * 
+	 * Entrada de datos
 	 */
 	private DataInputStream dis;
 	/**
-	 * 
+	 * Salida de datos
 	 */
 	private DataOutputStream dos;
 	/**
-	 * 
+	 * Socket para conectar con el cliente
 	 */
 	private Socket newSocket;
 	/**
-	 * 
+	 * Variable donde se descargan los datos
 	 */
 	private String informacion;
-	/**
-	 * 
-	 */
-	private String contenido;
 
 	/**
+	 * Constructor de la clase Conexion
 	 * 
 	 * @param newSocket
 	 * @param buzon
@@ -56,7 +56,8 @@ public class Conexion extends Thread {
 	}
 
 	/**
-	 * 
+	 * Método run que se ejecuta hasta que no recibe información del cliente y
+	 * cierra el socket
 	 */
 	@Override
 	public void run() {
@@ -83,6 +84,9 @@ public class Conexion extends Thread {
 	}
 
 	/**
+	 * Método que recibe la información y ejecuta un método u otro en el buzón. Si
+	 * la información empieza por #, ejecuta un método que envía un mensaje; si no,
+	 * ejecuta otro que lee los mensajes
 	 * 
 	 * @param informacion
 	 */

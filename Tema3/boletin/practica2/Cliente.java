@@ -25,13 +25,7 @@ public class Cliente {
 
 		try {
 			System.out.println("Creando socket cliente");
-			/**
-			 * 
-			 */
 			Socket clienteSocket = new Socket();
-			/**
-			 * 
-			 */
 			InetSocketAddress addr = new InetSocketAddress("localhost", 5555);
 			clienteSocket.connect(addr);
 
@@ -42,23 +36,23 @@ public class Cliente {
 			Scanner teclado = new Scanner(System.in);
 			
 			/**
-			 * 
+			 * Variable para el usuario
 			 */
 			String usuario;
 			/**
-			 * 
+			 * Variable para el receptor
 			 */
 			String receptor;
 			/**
-			 * 
+			 * Variable para el mensaje
 			 */
 			String mensaje;
 			/**
-			 * 
+			 * Variable para almacenar el emisor y el mensaje con el protocolo establecido
 			 */
 			String protocolo;
 			/**
-			 * 
+			 * Varible para la opción seleccionada por el usuario
 			 */
 			String opcion = "inicio";
 
