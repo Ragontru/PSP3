@@ -378,3 +378,90 @@ java.lang.Error: SWT Resource was not properly disposed
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:653)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-26 11:15:53.019
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-26 11:15:53.020
+!MESSAGE classpath=3 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-26 11:15:53.020
+!MESSAGE buffering callback sts4.classpath.xlSxPvVx Tema3 false 3
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-26 11:15:53.020
+!MESSAGE executing callback sts4.classpath.xlSxPvVx 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-26 11:15:53.025
+!MESSAGE executing callback sts4.classpath.xlSxPvVx SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-26 11:15:59.981
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-26 11:15:59.981
+!MESSAGE buffering callback sts4.classpath.xlSxPvVx Tema3 true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-26 11:15:59.981
+!MESSAGE executing callback sts4.classpath.xlSxPvVx 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-26 11:15:59.984
+!MESSAGE executing callback sts4.classpath.xlSxPvVx SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-26 11:16:28.505
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-26 11:16:28.505
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-26 11:16:28.505
+!MESSAGE buffering callback sts4.classpath.xlSxPvVx Tema4 false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-26 11:16:28.506
+!MESSAGE executing callback sts4.classpath.xlSxPvVx 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-26 11:16:28.508
+!MESSAGE executing callback sts4.classpath.xlSxPvVx SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-26 11:16:34.081
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-26 11:16:34.081
+!MESSAGE classpath=3 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-26 11:16:34.082
+!MESSAGE buffering callback sts4.classpath.xlSxPvVx Tema3 false 3
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-26 11:16:34.082
+!MESSAGE executing callback sts4.classpath.xlSxPvVx 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-26 11:16:34.085
+!MESSAGE executing callback sts4.classpath.xlSxPvVx SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-26 11:16:44.453
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-26 11:16:44.454
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-26 11:16:44.455
+!MESSAGE buffering callback sts4.classpath.xlSxPvVx Tema4 false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-26 11:16:44.455
+!MESSAGE executing callback sts4.classpath.xlSxPvVx 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-26 11:16:44.458
+!MESSAGE executing callback sts4.classpath.xlSxPvVx SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-26 11:17:23.958
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-26 11:17:23.958
+!MESSAGE classpath=3 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-26 11:17:23.959
+!MESSAGE buffering callback sts4.classpath.xlSxPvVx Tema4 false 3
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-26 11:17:23.959
+!MESSAGE executing callback sts4.classpath.xlSxPvVx 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-26 11:17:23.963
+!MESSAGE executing callback sts4.classpath.xlSxPvVx SUCCESS [done]
