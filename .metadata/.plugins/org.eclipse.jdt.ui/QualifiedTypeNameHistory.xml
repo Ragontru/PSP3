@@ -35,7 +35,6 @@
     <fullyQualifiedTypeName name="java.lang.Exception"/>
     <fullyQualifiedTypeName name="java.io.DataInputStream"/>
     <fullyQualifiedTypeName name="java.io.DataOutputStream"/>
-    <fullyQualifiedTypeName name="java.util.HashMap"/>
     <fullyQualifiedTypeName name="com.sun.org.apache.xpath.internal.operations.String"/>
     <fullyQualifiedTypeName name="com.sun.swing.internal.plaf.synth.resources.synth"/>
     <fullyQualifiedTypeName name="java.lang.Override"/>
@@ -47,4 +46,10 @@
     <fullyQualifiedTypeName name="practica.Correo"/>
     <fullyQualifiedTypeName name="java.io.InputStream"/>
     <fullyQualifiedTypeName name="java.io.OutputStream"/>
+    <fullyQualifiedTypeName name="org.springframework.ws.server.endpoint.annotation.Endpoint"/>
+    <fullyQualifiedTypeName name="java.util.HashMap"/>
+    <fullyQualifiedTypeName name="org.springframework.ws.config.annotation.EnableWs"/>
+    <fullyQualifiedTypeName name="org.springframework.boot.web.servlet.ServletRegistrationBean"/>
+    <fullyQualifiedTypeName name="org.springframework.context.annotation.Bean"/>
+    <fullyQualifiedTypeName name="com.psp.xml.fruteria.Verdura"/>
 </qualifiedTypeNameHistroy>

@@ -1,0 +1,92 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.psp.com/xml/fruteria"
+	targetNamespace="http://www.psp.com/xml/fruteria"	elementFormDefault="qualified">
+
+	<xs:element name="FrutaDetailsRequest">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="nombre" type="xs:string" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="FrutaDetailsResponse">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Fruta" type="tns:Fruta" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	
+	
+	<xs:element name="FrutasDetailsRequest">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="nombre" type="xs:string" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="FrutasDetailsResponse">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Frutas" maxOccurs="unbounded" type="tns:Fruta" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	
+	
+	<xs:element name="VerduraDetailsRequest">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="nombre" type="xs:string" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="VerduraDetailsResponse">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Verdura" type="tns:Verdura" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	
+	
+	<xs:element name="VerdurasDetailsRequest">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="nombre" type="xs:string" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="VerdurasDetailsResponse">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Verduras" maxOccurs="unbounded" type="tns:Verdura" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+
+
+	<xs:complexType name="Fruta">
+		<xs:sequence>
+			<xs:element name="nombre" type="xs:string" />
+			<xs:element name="variacion" type="xs:string" />
+			<xs:element name="precio" type="xs:double" />
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="Verdura">
+		<xs:sequence>
+			<xs:element name="nombre" type="xs:string" />
+			<xs:element name="variacion" type="xs:string" />
+			<xs:element name="precio" type="xs:double" />
+		</xs:sequence>
+	</xs:complexType>
+
+</xs:schema>
