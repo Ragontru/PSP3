@@ -2,7 +2,7 @@
 // Este archivo ha sido generado por la arquitectura JavaTM para la implantación de la referencia de enlace (JAXB) XML v2.2.7 
 // Visite <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Todas las modificaciones realizadas en este archivo se perderán si se vuelve a compilar el esquema de origen. 
-// Generado el: 2021.05.28 a las 11:09:15 PM CEST 
+// Generado el: 2021.05.30 a las 07:13:45 PM CEST 
 //
 
 
@@ -38,8 +38,8 @@ import javax.xml.bind.annotation.XmlType;
 @XmlType(name = "", propOrder = {
     "nombre"
 })
-@XmlRootElement(name = "VerdurasDetailsRequest")
-public class VerdurasDetailsRequest {
+@XmlRootElement(name = "FrutaPrecioRequest")
+public class FrutaPrecioRequest {
 
     @XmlElement(required = true)
     protected String nombre;

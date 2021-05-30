@@ -2,7 +2,7 @@
 // Este archivo ha sido generado por la arquitectura JavaTM para la implantación de la referencia de enlace (JAXB) XML v2.2.7 
 // Visite <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Todas las modificaciones realizadas en este archivo se perderán si se vuelve a compilar el esquema de origen. 
-// Generado el: 2021.05.28 a las 11:09:15 PM CEST 
+// Generado el: 2021.05.30 a las 07:13:45 PM CEST 
 //
 
 
@@ -37,19 +37,19 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link FrutaPrecioRequest }
+     * 
+     */
+    public FrutaPrecioRequest createFrutaPrecioRequest() {
+        return new FrutaPrecioRequest();
+    }
+
+    /**
      * Create an instance of {@link VerduraDetailsRequest }
      * 
      */
     public VerduraDetailsRequest createVerduraDetailsRequest() {
         return new VerduraDetailsRequest();
-    }
-
-    /**
-     * Create an instance of {@link FrutasDetailsRequest }
-     * 
-     */
-    public FrutasDetailsRequest createFrutasDetailsRequest() {
-        return new FrutasDetailsRequest();
     }
 
     /**
@@ -69,19 +69,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link FrutasDetailsResponse }
+     * Create an instance of {@link VerduraPrecioResponse }
      * 
      */
-    public FrutasDetailsResponse createFrutasDetailsResponse() {
-        return new FrutasDetailsResponse();
-    }
-
-    /**
-     * Create an instance of {@link VerdurasDetailsRequest }
-     * 
-     */
-    public VerdurasDetailsRequest createVerdurasDetailsRequest() {
-        return new VerdurasDetailsRequest();
+    public VerduraPrecioResponse createVerduraPrecioResponse() {
+        return new VerduraPrecioResponse();
     }
 
     /**
@@ -93,11 +85,19 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link VerdurasDetailsResponse }
+     * Create an instance of {@link FrutaPrecioResponse }
      * 
      */
-    public VerdurasDetailsResponse createVerdurasDetailsResponse() {
-        return new VerdurasDetailsResponse();
+    public FrutaPrecioResponse createFrutaPrecioResponse() {
+        return new FrutaPrecioResponse();
+    }
+
+    /**
+     * Create an instance of {@link VerduraDetailsResponse }
+     * 
+     */
+    public VerduraDetailsResponse createVerduraDetailsResponse() {
+        return new VerduraDetailsResponse();
     }
 
     /**
@@ -109,11 +109,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link VerduraDetailsResponse }
+     * Create an instance of {@link VerduraPrecioRequest }
      * 
      */
-    public VerduraDetailsResponse createVerduraDetailsResponse() {
-        return new VerduraDetailsResponse();
+    public VerduraPrecioRequest createVerduraPrecioRequest() {
+        return new VerduraPrecioRequest();
     }
 
 }

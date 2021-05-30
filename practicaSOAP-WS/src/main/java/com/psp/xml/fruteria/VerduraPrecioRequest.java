@@ -2,14 +2,12 @@
 // Este archivo ha sido generado por la arquitectura JavaTM para la implantación de la referencia de enlace (JAXB) XML v2.2.7 
 // Visite <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Todas las modificaciones realizadas en este archivo se perderán si se vuelve a compilar el esquema de origen. 
-// Generado el: 2021.05.28 a las 11:09:15 PM CEST 
+// Generado el: 2021.05.30 a las 07:13:45 PM CEST 
 //
 
 
 package com.psp.xml.fruteria;
 
-import java.util.ArrayList;
-import java.util.List;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
@@ -27,7 +25,7 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="Frutas" type="{http://www.psp.com/xml/fruteria}Fruta" maxOccurs="unbounded"/>
+ *         &lt;element name="nombre" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -38,41 +36,36 @@ import javax.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = {
-    "frutas"
+    "nombre"
 })
-@XmlRootElement(name = "FrutasDetailsResponse")
-public class FrutasDetailsResponse {
+@XmlRootElement(name = "VerduraPrecioRequest")
+public class VerduraPrecioRequest {
 
-    @XmlElement(name = "Frutas", required = true)
-    protected List<Fruta> frutas;
+    @XmlElement(required = true)
+    protected String nombre;
 
     /**
-     * Gets the value of the frutas property.
+     * Obtiene el valor de la propiedad nombre.
      * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the frutas property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getFrutas().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link Fruta }
-     * 
-     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
-    public List<Fruta> getFrutas() {
-        if (frutas == null) {
-            frutas = new ArrayList<Fruta>();
-        }
-        return this.frutas;
+    public String getNombre() {
+        return nombre;
+    }
+
+    /**
+     * Define el valor de la propiedad nombre.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setNombre(String value) {
+        this.nombre = value;
     }
 
 }
