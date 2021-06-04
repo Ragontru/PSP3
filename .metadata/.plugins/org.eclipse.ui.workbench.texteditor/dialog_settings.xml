@@ -1,50 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="empleado"/>
+		<item key="selection" value="Verdura"/>
 		<item key="wrap" value="true"/>
-		<item key="casesensitive" value="false"/>
+		<item key="casesensitive" value="true"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
-			<item value="Product"/>
 			<item value="Fruta"/>
-			<item value="FruteriaRepository"/>
-			<item value="Potencia"/>
-			<item value="CochePotenciaDeRequest"/>
-			<item value="Marca"/>
+			<item value="int"/>
 			<item value="fruta"/>
-			<item value="Repository"/>
+			<item value="FrutaNombreVariante"/>
+			<item value="FrutaDetails"/>
+			<item value="FrutaDetailsRequest"/>
+			<item value="name"/>
+			<item value="Frutas"/>
+			<item value="frutas"/>
+			<item value="frutaDetailsWsdl"/>
+			<item value="setAddress"/>
+			<item value="getName"/>
+			<item value="setName"/>
 			<item value="school"/>
-			<item value="student"/>
-			<item value="frut"/>
-			<item value="float"/>
-			<item value="Address"/>
-			<item value="Standard"/>
-			<item value="Standart"/>
+			<item value="howtodoinjava"/>
 		</list>
 		<list key="replacehistory">
-			<item value="empleado"/>
-			<item value="Empleado"/>
 			<item value="Verdura"/>
-			<item value="Coche"/>
-			<item value="coche"/>
-			<item value="potencia"/>
-			<item value="Potencia"/>
-			<item value="verdura"/>
-			<item value="fruteria"/>
-			<item value="fruta"/>
-			<item value="Fruta"/>
 			<item value="double"/>
-			<item value="Precio"/>
-			<item value="Variante"/>
-			<item value="Variedad"/>
+			<item value="verdura"/>
+			<item value="FrutaVariantePrecio"/>
+			<item value="FrutaNombreVariante"/>
+			<item value="nombre"/>
+			<item value="Verduras"/>
+			<item value="verduras"/>
+			<item value="Fruteria"/>
+			<item value="fruteria"/>
+			<item value="fruteriaDetailsWsdl"/>
+			<item value="setVariante"/>
+			<item value="getNombre"/>
+			<item value="setNombre"/>
+			<item value="practica"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
 		<item key="DIALOG_X_ORIGIN" value="8"/>
-		<item key="DIALOG_Y_ORIGIN" value="447"/>
+		<item key="DIALOG_Y_ORIGIN" value="403"/>
 		<item key="DIALOG_WIDTH" value="284"/>
 		<item key="DIALOG_HEIGHT" value="391"/>
 		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>

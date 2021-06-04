@@ -1,0 +1,135 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:tns="http://www.practica.com/xml/fruteria"
+	targetNamespace="http://www.practica.com/xml/fruteria"
+	elementFormDefault="qualified">
+
+	<!-- FRUTA -->
+	<!-- Solicitud de los detalles de la fruta por nombre -->
+	<xs:element name="FrutaDetailsRequest">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="nombre" type="xs:string" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<!-- Respuesta de los detalles de la fruta por nombre -->
+	<xs:element name="FrutaDetailsResponse">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Fruta" type="tns:Fruta" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<!-- Solicitud de la variante de la fruta por nombre -->
+	<xs:element name="FrutaNombreVarianteRequest">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="nombre" type="xs:string" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<!-- Respuesta de la variante de la fruta por nombre -->
+	<xs:element name="FrutaNombreVarianteResponse">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="variante" type="xs:string" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<!-- Solicitud de precio de la fruta por variante -->
+	<xs:element name="FrutaVariantePrecioRequest">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="variante" type="xs:string" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<!-- Respuesta de precio de la fruta por variante -->
+	<xs:element name="FrutaVariantePrecioResponse">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="precio" type="xs:int" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<!-- VERDURA -->
+	<!-- Solicitud de los detalles de la verdura por nombre -->
+	<xs:element name="VerduraDetailsRequest">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="nombre" type="xs:string" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<!-- Respuesta de los detalles de la verdura por nombre -->
+	<xs:element name="VerduraDetailsResponse">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Verdura" type="tns:Verdura" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<!-- Solicitud de la variante de la verdura por nombre -->
+	<xs:element name="VerduraNombreVarianteRequest">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="nombre" type="xs:string" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<!-- Respuesta de la variante de la verdura por nombre -->
+	<xs:element name="VerduraNombreVarianteResponse">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="variante" type="xs:string" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<!-- Solicitud de precio de la verdura por variante -->
+	<xs:element name="VerduraVariantePrecioRequest">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="variante" type="xs:string" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<!-- Respuesta de precio de la verdura por variante -->
+	<xs:element name="VerduraVariantePrecioResponse">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="precio" type="xs:int" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<!-- DETALLES -->
+	<!-- Detalles de la fruta -->
+	<xs:complexType name="Fruta">
+		<xs:sequence>
+			<xs:element name="nombre" type="xs:string" />
+			<xs:element name="variante" type="xs:string" />
+			<xs:element name="precio" type="xs:int" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<!-- Detalles de la verdura -->
+	<xs:complexType name="Verdura">
+		<xs:sequence>
+			<xs:element name="nombre" type="xs:string" />
+			<xs:element name="variante" type="xs:string" />
+			<xs:element name="precio" type="xs:int" />
+		</xs:sequence>
+	</xs:complexType>
+
+</xs:schema>
